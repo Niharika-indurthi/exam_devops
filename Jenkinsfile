@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "kubedemoapp:v1"
+        IMAGE_NAME = "kubedemoappp:v1"
         DOCKER_REPO = "nihaaaa34/sample:kubeimage12"
         KUBECONFIG_PATH = "C:\\Windows\\System32\\config\\systemprofile\\.kube\\config"
     }
@@ -40,7 +40,7 @@ pipeline {
                 bat "kubectl --kubeconfig \"${KUBECONFIG_PATH}\" get nodes"
                 bat "kubectl --kubeconfig \"${KUBECONFIG_PATH}\" apply -f deployment.yaml"
                 bat "kubectl --kubeconfig \"${KUBECONFIG_PATH}\" apply -f service.yaml"
-                bat "kubectl --kubeconfig \"${KUBECONFIG_PATH}\" rollout status deployment/kubedemoapp-deployment"
+                bat "kubectl --kubeconfig \"${KUBECONFIG_PATH}\" rollout status deployment/kubedemoappp-deployment"
             }
         }
     }
