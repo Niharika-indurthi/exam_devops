@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         IMAGE_NAME = "kubedemoapp:v1"
-        DOCKER_REPO = "nihaaaa34/sample:kubeimage1"
+        DOCKER_REPO = "nihaaaa34/sample:kubeimage12"
         KUBECONFIG_PATH = "C:\\Windows\\System32\\config\\systemprofile\\.kube\\config"
     }
 
